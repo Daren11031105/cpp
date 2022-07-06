@@ -5,7 +5,7 @@ using namespace std;
 int a[4][3];
 void sol()
 {
-    int min = -1e5;
+    int min = INT_MAX;
     for (int i = 0; i < 4; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -14,7 +14,7 @@ void sol()
             if (min > a[i][j]) min = a[i][j];
         }
     }
-    cout << min << a[3][2] << '\n';
+    cout << min << ' ' << a[3][2] << '\n';
 }
 signed main()
 {
