@@ -50,7 +50,6 @@ signed main()
 {
     op
     int num;
-    score.clear();
     for (int i = 0; i < 10; i++) {cin >> num; score.push_back(num);}
     score = mergesort(score);
     for (auto it : score) { cout << it << " "; }
