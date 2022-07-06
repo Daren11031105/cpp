@@ -23,7 +23,7 @@ vector<int> mergesort(vector<int> arr)
     int Lptr = 0, Rptr = 0;
     while (Lptr < (int)left.size() && Rptr < (int)right.size())
     {
-        if (left[Lptr] < right[Rptr])
+        if (left[Lptr] > right[Rptr])
         {
             sorted.push_back(left[Lptr]);
             Lptr++;
