@@ -49,7 +49,8 @@ vector<int> mergesort(vector<int> arr)
 signed main()
 {
     op
-    for (int i = 0; i < 10; i++) cin >> score[i];
+    int num;
+    for (int i = 0; i < 10; i++) {cin >> num; score.push_back(num);}
     score = mergesort(score);
     for (auto i : score) cout << score[i] << " ";
     cout << '\n';
