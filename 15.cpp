@@ -31,7 +31,7 @@ void print(const v &num)
     {
         cout << num.back();
         for (auto it = num.rbegin() + 1; it != num.rend(); ++it)
-            printf("%04d", *it);
+            printf("%04lld", *it);
         cout << '\n';
     }
 }
