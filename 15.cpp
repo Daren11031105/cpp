@@ -37,6 +37,6 @@ void print(const v &num)
 }
 signed main()
 {
-    v ans = F(10000);
+    v ans = F(200);
     print(ans);
 }
