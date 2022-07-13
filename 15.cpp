@@ -4,7 +4,7 @@
 using namespace std;
 v F(int n)
 {
-    assert(n >= 0 && n <= 200);
+    assert(n >= 0 && n <= 5000);
     v ans;
     ans.push_back(1);
     for (int i = 1; i <= n; ++i)
@@ -37,6 +37,6 @@ void print(const v &num)
 }
 signed main()
 {
-    v ans = F(200);
+    v ans = F(5000);
     print(ans);
 }
