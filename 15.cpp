@@ -6,7 +6,7 @@
 using namespace std;
 v F(int n)
 {
-    assert(n >= 0 && n <= 10000);
+    assert(n >= 0 && n <= 15000);
     v ans;
     ans.push_back(1);
     for (int i = 1; i <= n; ++i)
