@@ -16,8 +16,8 @@ v F(int n)
         for (auto &c : ans)
         {
             int product = c * i + b;
-            c = product % 10000;
-            b = product / 10000;
+            c = product % 1000;
+            b = product / 1000;
         }
         if (b > 0)
         {
@@ -34,7 +34,7 @@ void print(const v &num)
     {
         cout << num.back();
         for (auto it = num.rbegin() + 1; it != num.rend(); ++it)
-            printf("%04lld", *it);
+            printf("%03lld", *it);
         cout << '\n';
     }
 }
