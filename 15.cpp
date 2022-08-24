@@ -2,13 +2,14 @@
 #include <assert.h>
 #include <vector>
 #define int long long
+#define pb push_back
 #define v vector<int>
 using namespace std;
 v F(int n)
 {
-    assert(n >= 0 && n <= 15000);
+    assert(n >= 0 && n <= 200);
     v ans;
-    ans.push_back(1);
+    ans.pb(1);
     for (int i = 1; i <= n; ++i)
     {
         int b = 0;
@@ -20,7 +21,7 @@ v F(int n)
         }
         if (b > 0)
         {
-            ans.push_back(b);
+            ans.pb(b);
         }
     }
     return ans;
