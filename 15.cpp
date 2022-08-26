@@ -1,9 +1,12 @@
 #include <iostream>
 #include <assert.h>
 #include <vector>
+#pragma GCC optimize("Ofast")
 #define int long long
 #define pb push_back
 #define v vector<int>
+#define endl '\n'
+#define op ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
 v F(int n)
 {
@@ -40,6 +43,7 @@ void print(const v &num)
 }
 signed main()
 {
+    op
     v ans = F(200);
     print(ans);
 }
