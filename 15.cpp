@@ -4,14 +4,17 @@
 #pragma GCC optimize("Ofast")
 #define int long long
 #define pb push_back
-#define v vector<int>
+#define vi vector<int>
+#define vvi vector<vi>
+#define f first
+#define s second
 #define endl '\n'
 #define op ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
-v F(int n)
+vi F(int n)
 {
     assert(n >= 0 && n <= 200);
-    v ans;
+    vi ans;
     ans.pb(1);
     for (int i = 1; i <= n; ++i)
     {
@@ -29,7 +32,7 @@ v F(int n)
     }
     return ans;
 }
-void print(const v &num)
+void print(const vi &num)
 {
     if (num.empty())
         puts("0");
@@ -44,6 +47,6 @@ void print(const v &num)
 signed main()
 {
     op
-    v ans = F(200);
+    vi ans = F(200);
     print(ans);
 }
